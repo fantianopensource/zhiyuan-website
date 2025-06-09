@@ -1,0 +1,32 @@
+GET http://localhost:8000/
+
+
+###
+
+GET http://localhost:8000/api/posts
+
+###
+GET http://localhost:8000/api/posts/7
+
+###
+
+POST http://localhost:8000/api/posts
+Content-Type: application/json
+
+{
+    "title": "Test Post 1",
+    "content": "This is a test post 1."
+}
+
+###
+DELETE http://localhost:8000/api/posts/5
+
+###
+PUT http://localhost:8000/api/posts/6
+Content-Type: application/json
+
+{
+    "title": "second post",
+    "content": "second post content..."
+}
+    
